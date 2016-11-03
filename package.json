@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.js -t 10000"
+    "test": "mocha -r should dist/server.js --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
