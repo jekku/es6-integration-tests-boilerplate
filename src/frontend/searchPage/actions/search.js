@@ -24,7 +24,7 @@ export default function (done) {
 	result.should.be.exactly('Maria Sharapova - Google Search');
 	driver.quit();
 	done();
+      });
     });
-  });
 };
 
