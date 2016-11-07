@@ -1,8 +1,6 @@
 'use strict';
 
-import {default as search} from './search';
+import {default as searchMethods} from './search';
 
-export default {
-  search
-};
+export default searchMethods;
 
