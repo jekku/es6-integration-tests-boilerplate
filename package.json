@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r should src/server.js --require babel-polyfill --compilers js:babel-register -t 10000"
+    "test": "mocha -r should src/server.js --require babel-polyfill --compilers js:babel-register -t 10000",
+    "lint": "jshint src/",
+    "start-dev": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
+    "jshint": "^2.9.4",
     "should": "^11.1.1"
   },
   "dependencies": {

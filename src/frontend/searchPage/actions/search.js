@@ -3,7 +3,6 @@
 import {default as config} from 'config/config';
 import {default as createWebDriver} from 'lib/WebDriver';
 import {default as Selenium} from 'selenium-webdriver';
-import {default as should} from 'should';
 
 let driver;
 let searchBar;
@@ -20,11 +19,11 @@ const initialize = function initialize () {
     searchButton = driver.findElement(
       Selenium.By.name('btnG')
     );
-  }
+  };
 
   return driver.get(config.siteUrl)
     .then(bindElements);
-}
+};
 
 const performSearchByButton = function searchByButton (done) {
   initialize()

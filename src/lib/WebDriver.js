@@ -8,5 +8,5 @@ export default function () {
     .forBrowser('phantomjs')
     .usingServer(config.seleniumServerUrl)
     .build();
-};
+}
 
