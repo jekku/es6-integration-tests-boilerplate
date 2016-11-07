@@ -3,7 +3,7 @@
 import {default as Selenium} from 'selenium-webdriver';
 import {default as config} from 'config/config';
 
-export default function (path) {
+export default function () {
   return new Selenium.Builder()
     .forBrowser('phantomjs')
     .usingServer(config.seleniumServerUrl)
