@@ -8,7 +8,7 @@ export default {
   runTest: () => {
     describe('Search Page', () => {
       it(
-        'Will perform a search when the search button is clicked after a search query is typed',
+        'Will perform a search on finish of typing query',
         actions.performSearchByButton
       );
 
