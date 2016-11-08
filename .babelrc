@@ -1,0 +1,11 @@
+{
+    "presets": ["es2015", "stage-0"],
+    "plugins": [
+      [
+        "resolver",
+        {
+          "resolveDirs": ["src", "src/frontend"]
+        }
+      ]
+    ]
+}
